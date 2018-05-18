@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText edt_length, edt_width;
     Button btn_solve;
-    TextView textView_result;
+    TextView textView_primeter, textView_area;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,8 @@ public class MainActivity extends AppCompatActivity {
         edt_length = findViewById(R.id.edt_lengthNumber);
         edt_width = findViewById(R.id.edt_widthNumber);
         btn_solve = findViewById(R.id.btn_solve);
-        textView_result = findViewById(R.id.textview_result);
+        textView_primeter = findViewById(R.id.textview_primeter);
+        textView_area = findViewById(R.id.textview_area);
 
         btn_solve.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,13 +34,18 @@ public class MainActivity extends AppCompatActivity {
                 closeKeyboard();
                 int a = Integer.parseInt(edt_length.getText().toString().trim());
                 int b = Integer.parseInt(edt_width.getText().toString().trim());
-                textView_result.setText(String.valueOf(rectanglePerimeter(a,b)));
+                textView_primeter.setText(String.valueOf(rectanglePerimeter(a,b)));
+                textView_area.setText(String.valueOf(rectangleArea(a,b)));
             }
         });
     }
 
     public int rectanglePerimeter(int length, int width){
         return ((length + width)*2);
+    }
+
+    public int rectangleArea(int length, int width){
+        return (length*width);
     }
 
     private void closeKeyboard() {
