@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SimpleCalculator</string>
+
+    <string name="id_edt_length">edt_lengthNumber</string>
+    <string name="id_edt_width">edt_widthNumber</string>
+    <string name="id_btn_result">btn_result</string>
+    <string name="id_textview_result">tv_result</string>
+
+    <string name="hint_edt_length">Length</string>
+    <string name="hint_edt_width">Width</string>
+    <string name="btn_solve">solve</string>
+
+    <string name="textview_result">The perimeter of this rectangle is: </string>
+
+
+</resources>
