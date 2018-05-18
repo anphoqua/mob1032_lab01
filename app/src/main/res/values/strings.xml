@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SimpleCalculator</string>
+    <string name="app_name">RectangleLab1</string>
 
     <string name="id_edt_length">edt_lengthNumber</string>
     <string name="id_edt_width">edt_widthNumber</string>
@@ -10,7 +10,8 @@
     <string name="hint_edt_width">Width</string>
     <string name="btn_solve">solve</string>
 
-    <string name="textview_result">The perimeter of this rectangle is: </string>
+    <string name="textview_lable_primeter">The perimeter of this rectangle is: </string>
+    <string name="textview_lable_area">The area of this rectangle is: </string>
 
 
 </resources>
